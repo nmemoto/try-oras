@@ -1,0 +1,12 @@
+{
+    "name": "try-oras",
+    "dockerComposeFile": "compose.yaml",
+    "service": "work",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-from-docker:1": {
+            "version": "latest"
+        }
+    },
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
+}

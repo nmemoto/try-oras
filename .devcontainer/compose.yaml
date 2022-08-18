@@ -1,0 +1,8 @@
+services:
+  work:
+    image: mcr.microsoft.com/vscode/devcontainers/base:0-bullseye
+    command: sleep infinity
+    volumes:
+      - ..:/workspace:cached
+  registry:
+    image: registry:2
